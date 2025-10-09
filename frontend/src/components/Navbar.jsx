@@ -1,34 +1,58 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, FolderGit2, Contact,CircleQuestionMark  } from 'lucide-react'; 
+import { Home, FolderGit2, BookOpen } from 'lucide-react';
 
 const Navbar = () => {
     return (
-        <div className="fixed top-4 left-4 right-4 h-10 px-6 dark:bg-[#D8DEE9] rounded-full shadow-lg flex items-center justify-center">
-            <div className="flex gap-10">
+        <div className="fixed top-4 left-4 right-4 h-12 px-8 bg-[rgba(40,44,52,0.85)] backdrop-blur-sm rounded-full shadow-lg flex items-center justify-center dark:bg-[rgba(216,222,233,0.15)]">
+            <div className="flex gap-6">
                 <NavLink
                     to="/"
-                    className="flex items-center gap-2 hover:text-white transition"
-                >   
-                    <Home size={16}/> Home
+                    className={({ isActive }) =>
+                        `flex items-center gap-2 px-3 py-1.5 rounded-full transition ${
+                            isActive
+                                ? 'bg-blue-600 text-white'
+                                : 'text-white hover:bg-blue-500 hover:text-white'
+                        } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500`
+                    }
+                >
+                    <Home size={16} /> Home
                 </NavLink>
                 <NavLink
                     to="/projects"
-                    className="flex items-center gap-2 hover:text-white transition"
-                >   
-                    <FolderGit2 size={16}/>Projects
+                    className={({ isActive }) =>
+                        `flex items-center gap-2 px-3 py-1.5 rounded-full transition ${
+                            isActive
+                                ? 'bg-blue-600 text-white'
+                                : 'text-white hover:bg-blue-500 hover:text-white'
+                        } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500`
+                    }
+                >
+                    <FolderGit2 size={16} /> Projects
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                     to="/about"
-                    className="flex items-center gap-2 hover:text-white transition"
-                >   
-                    <CircleQuestionMark size={16}/>About
-                </NavLink>
+                    className={({ isActive }) =>
+                        `flex items-center gap-2 px-3 py-1.5 rounded-full transition ${
+                            isActive
+                                ? 'bg-blue-600 text-white'
+                                : 'text-white hover:bg-blue-500 hover:text-white'
+                        } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500`
+                    }
+                >
+                    <CircleQuestionMark size={16} /> About
+                </NavLink> */}
                 <NavLink
-                    to="/about"
-                    className="flex items-center gap-2 hover:text-white transition"
-                >   
-                    <Contact size={16}/>Contact
+                    to="/article"
+                    className={({ isActive }) =>
+                        `flex items-center gap-2 px-3 py-1.5 rounded-full transition ${
+                            isActive
+                                ? 'bg-blue-600 text-white'
+                                : 'text-white hover:bg-blue-500 hover:text-white'
+                        } focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500`
+                    }
+                >
+                    <BookOpen size={16} /> Article
                 </NavLink>
             </div>
         </div>
