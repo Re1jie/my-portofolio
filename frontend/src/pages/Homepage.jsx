@@ -8,7 +8,7 @@ const Homepage = () => {
     <main className="text-gray-800 dark:text-white">
 
       {/* Hero Section */}
-      <section id="hero" className="min-h-[64vh] flex items-end justify-center bg-gray-50 dark:bg-[#2E3440] text-center px-4">
+      <section id="hero" className="min-h-[58vh] flex items-end justify-center bg-gray-50 dark:bg-[#2E3440] text-center px-4">
         <div className="flex items-center gap-8">
           <img
             src="/fikri.webp"
@@ -36,7 +36,7 @@ const Homepage = () => {
                       document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
                     }}
                 >
-                    Contact Me
+                    Let's Connect !
                 </Button>
             </div>
           </div>
@@ -199,14 +199,14 @@ const Homepage = () => {
           <div className="w-24 h-1 bg-cyan-500 mx-auto mb-12 -mt-6 rounded"></div>
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-xl">Ship Operation Intern — PT. PELNI</h3>
-              <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">Jul 2025 – now</p>
+              <h3 className="font-semibold text-xl">Ship Operation Intern — PT. Pelayaran Nasional Indonesia (Persero)</h3>
+              <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">Jul 2025 - now</p>
               <p className="text-gray-700 dark:text-gray-400">
                 Developed simPLAN, optimized ship scheduling with real-time Gantt chart timeline and conflict detection. Reduced manual scheduling errors and improved operational efficiency.
               </p>
             </div>
             <div>
-              <h3 className="font-semibold text-xl">Guest Speaker — BMS HIMATIKA ITS</h3>
+              <h3 className="font-semibold text-xl">Guest Speaker — Basic Media Schooling by HIMATIKA ITS</h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">2024</p>
               <p className="text-gray-700 dark:text-gray-400">
                 Presented design principles and Figma to 30+ students, achieving 93% satisfaction rate.
@@ -240,8 +240,8 @@ const Homepage = () => {
               <h3 className="font-semibold text-xl">B.Sc. in Mathematics & Computer Science</h3>
               <p className="text-gray-600 dark:text-gray-300 text-sm">Institut Teknologi Sepuluh Nopember (2022 - 2026)</p>
               <ul className="list-disc list-inside text-sm text-gray-700 dark:text-gray-400 mt-2">
-                <li>Relevant coursework: Object Oriented Programming, Discrete Mathematics, Software Engineering</li>
-                <li>Focus: Mathematical Modeling, Algorithm Design and Analysis, and Fullstack Web Development</li>
+                <li>Relevant coursework: Object Oriented Programming, Mathematics Logic, Software Engineering</li>
+                <li>Focus: Computer Science</li>
               </ul>
             </div>
             <div>
