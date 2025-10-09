@@ -256,8 +256,8 @@ const Homepage = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-white dark:bg-[#2E3440] px-6">
-        {/* <div className="max-w-2xl mx-auto">
+      {/* <section id="contact" className="py-20 bg-white dark:bg-[#2E3440] px-6">
+        <div className="max-w-2xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-8">Contact Me</h2>
           <div className="w-24 h-1 bg-cyan-500 mx-auto mb-12 -mt-4 rounded"></div>
           <form className="space-y-4">
@@ -278,8 +278,8 @@ const Homepage = () => {
             />
             <Button>Send Message</Button>
           </form>
-        </div> */}
-      </section>
+        </div>
+      </section> */}
     </main>
   );
 };
