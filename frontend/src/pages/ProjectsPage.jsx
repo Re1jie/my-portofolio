@@ -60,7 +60,7 @@ const ProjectsPage = () => {
                 </p>
               </div>
               <div className="bg-gray-200 dark:bg-gray-700 rounded-lg shadow-lg p-4">
-                <img src="src/assets/img/parsing.png" alt="Showcase Fitur Parsing Jadwal" className="rounded-md w-full h-auto object-cover"/>
+                <img src="/img/parsing.png" alt="Showcase Fitur Parsing Jadwal" className="rounded-md w-full h-auto object-cover"/>
               </div>
             </div>
 
@@ -74,7 +74,7 @@ const ProjectsPage = () => {
               </div>
               <div className="bg-gray-200 dark:bg-gray-700 rounded-lg shadow-lg p-4 md:order-1">
                 {/* Ganti `src` dengan path gambar showcase Anda */}
-                <img src="src/assets/img/deteksibareng.png" alt="Showcase Fitur Deteksi Konflik" className="rounded-md w-full h-auto object-cover"/>
+                <img src="/img/deteksibareng.png" alt="Showcase Fitur Deteksi Konflik" className="rounded-md w-full h-auto object-cover"/>
               </div>
             </div>
           </div>
